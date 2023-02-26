@@ -1,0 +1,7 @@
+{
+  "parent": "jigsaw_ponos_dlc:custom/autospoon",
+  "textures": {
+    "0": "jigsaw_ponos_dlc:blocks/autospoon3d",
+    "particle": "jigsaw_ponos_dlc:items/autospoon"
+  }
+}

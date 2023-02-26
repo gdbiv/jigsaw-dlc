@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
+    },
+    "1": {
+      "item": "minecraft:emerald_block"
+    },
+    "2": {
+      "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
+    },
+    "3": {
+      "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
+    },
+    "4": {
+      "item": "minecraft:iron_block"
+    },
+    "5": {
+      "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
+    },
+    "6": {
+      "item": "jigsaw_ponos_dlc:diamond_iron_block"
+    },
+    "7": {
+      "item": "jigsaw_ponos_dlc:ponosblock"
+    },
+    "8": {
+      "item": "jigsaw_ponos_dlc:diamond_iron_block"
+    }
+  },
+  "result": {
+    "item": "jigsaw_ponos_dlc:fart_turret",
+    "count": 1
+  }
+}

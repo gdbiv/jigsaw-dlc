@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "jigsaw_ponos_dlc:diamond_iron_block"
+    },
+    "1": {
+      "item": "minecraft:trident"
+    },
+    "2": {
+      "item": "jigsaw_ponos_dlc:diamond_iron_block"
+    },
+    "4": {
+      "item": "jigsaw_ponos_dlc:auto_fork_item"
+    },
+    "7": {
+      "item": "jigsaw_ponos_dlc:auto_fork_item"
+    }
+  },
+  "result": {
+    "item": "jigsaw_ponos_dlc:sexy_sledgehammer",
+    "count": 1
+  }
+}

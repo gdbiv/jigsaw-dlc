@@ -1,0 +1,1790 @@
+{
+  "mod_elements": [
+    {
+      "name": "Ponosblock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponosblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/ponosblock.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/ponosblock.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/block/PonosblockBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/ponosblock.json"
+        ]
+      }
+    },
+    {
+      "name": "JigsawPlus",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jigsaw_plus",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PonosPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponos_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PonosPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ponos",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponos",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PonosItem.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/ponos.json"
+        ]
+      }
+    },
+    {
+      "name": "PerdezhDebug",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fart_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PerdezhDebugItem.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/fart_projectile.json"
+        ]
+      }
+    },
+    {
+      "name": "PushkaPerdushka",
+      "type": "rangeditem",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pushka_perdushka",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PushkaPerdushkaItem.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/pushka_perdushka.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/PushkaPerdushkaEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PushkaPerdushkaRangedItemUsed",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pushka_perdushka_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PushkaPerdushkaRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PonosBlockCraft",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponos_block_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/ponos_block_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "PerdezhInBottle",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perdezh_in_bottle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/perdezh_in_bottle.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PerdezhInBottleItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PerdezhBlockBlockAdded",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perdezh_block_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PerdezhBlockBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PerdezhBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perdezh_block_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PerdezhBlockEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PerdezhBlock",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perdezh_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/perdezh_block.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/perdezh_block.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/block/PerdezhBlockBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/perdezh_block.json"
+        ]
+      }
+    },
+    {
+      "name": "PushkaPerdushkaProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pushka_perdushka_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PushkaPerdushkaProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PerdezhCraft",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perdezh_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/perdezh_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "PukometCraft",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pukomet_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/pukomet_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "AdvancedBeaverCollar",
+      "type": "item",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_beaver_collar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/advanced_beaver_collar.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/AdvancedBeaverCollarItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AdvancedBeaverCollarUse",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advanced_beaver_collar_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/AdvancedBeaverCollarUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShitWooferRedstoneOn",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_woofer_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/ShitWooferRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShitWoofer",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_woofer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/shit_woofer.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/block/ShitWooferBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/shit_woofer.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/shit_woofer.json"
+        ]
+      }
+    },
+    {
+      "name": "Ponosthrower",
+      "type": "rangeditem",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponosthrower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/PonosthrowerEntity.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PonosthrowerItem.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/ponosthrower.json"
+        ]
+      }
+    },
+    {
+      "name": "PonosthrowerSummonFire",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponosthrower_summon_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PonosthrowerSummonFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PonosthrowerRangedItemUsed",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponosthrower_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PonosthrowerRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShithrowerRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shithrower_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/shithrower_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PonosblockEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponosblock_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PonosblockEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BrawlLeaves",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brawl_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/brawl_leaves.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/brawl_leaves.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/brawl_leaves.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/block/BrawlLeavesBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "FartTurret",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fart_turret",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/block/FartTurretBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/fart_turret.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/block/entity/FartTurretBlockEntity.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/fart_turret.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/fart_turret.json"
+        ]
+      }
+    },
+    {
+      "name": "FartTurretRedstoneOn",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fart_turret_redstone_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/FartTurretRedstoneOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DiamondIronBlock",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_iron_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/block/DiamondIronBlockBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/diamond_iron_block.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/diamond_iron_block.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/diamond_iron_block.json"
+        ]
+      }
+    },
+    {
+      "name": "DiamondIronRecipe",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_iron_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/diamond_iron_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "FartTurretCraft",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fart_turret_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/fart_turret_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "PonosBomb",
+      "type": "rangeditem",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponos_bomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/ponos_bomb.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PonosBombItem.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/PonosBombEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PonosBombProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponos_bomb_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PonosBombProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PonosbombRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponosbomb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/ponosbomb_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PonosBombRangedItemUsed",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponos_bomb_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PonosBombRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoFork",
+      "type": "rangeditem",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_fork",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/item/AutoForkItem.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/AutoForkEntity.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/auto_fork.json"
+        ]
+      }
+    },
+    {
+      "name": "AutoForkProjectile",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_fork_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/AutoForkProjectileProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoforkCraft",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "autofork_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/autofork_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "PiggunProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piggun_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PiggunProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Piggun",
+      "type": "rangeditem",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piggun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/piggun.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PiggunItem.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/PiggunEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "PiggunRangedItemUsed",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piggun_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PiggunRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PigAmmo",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig_ammo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/pig_ammo.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PigAmmoItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PigAmmoRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig_ammo_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/pig_ammo_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "PigGunRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pig_gun_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/pig_gun_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ZombieBeaver",
+      "type": "livingentity",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombie_beaver",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/zombie_beaver_spawn_egg.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/client/renderer/ZombieBeaverRenderer.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/ZombieBeaverEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "OpPiggun",
+      "type": "rangeditem",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "op_piggun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/op_piggun.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/OpPiggunEntity.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/OpPiggunItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BeaverGun",
+      "type": "rangeditem",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaver_gun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/beaver_gun.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/BeaverGunItem.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/BeaverGunEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "OpPiggunRangedItemUsed",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "op_piggun_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/OpPiggunRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeaverGunUsed",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaver_gun_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/BeaverGunUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeaverGunProjectileHitsGround",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beaver_gun_projectile_hits_ground",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/BeaverGunProjectileHitsGroundProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlintWrecker",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_wrecker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/item/FlintWreckerItem.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/flint_wrecker.json"
+        ]
+      }
+    },
+    {
+      "name": "FlintWreckerCraft",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flint_wrecker_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/flint_wrecker_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "DiamondIronBlockOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_iron_block_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/DiamondIronBlockOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DiamondIronBlockPlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_iron_block_player_starts_to_destroy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/DiamondIronBlockPlayerStartsToDestroyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AutoForkItem",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_fork_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/auto_fork_item.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/AutoForkItemItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AutoForkItemEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "auto_fork_item_entity_swings_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/AutoForkItemEntitySwingsItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExtinguisherWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extinguisher_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/ExtinguisherWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Extinguisher",
+      "type": "rangeditem",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extinguisher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/item/ExtinguisherItem.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/extinguisher.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/ExtinguisherEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ExtinguisherRangedItemUsed",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extinguisher_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/ExtinguisherRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MaznyaEssence",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maznya_essence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/maznya_essence.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/MaznyaEssenceItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SledgeDebugLMBProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sledge_debug_lmb_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/SledgeDebugLMBProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SledgeDebugLMB",
+      "type": "rangeditem",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sledge_debug_lmb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/SledgeDebugLMBEntity.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/sledge_debug_lmb.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/SledgeDebugLMBItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SledgeDebugRMBProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sledge_debug_rmb_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/SledgeDebugRMBProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SledgeDebugRMB",
+      "type": "rangeditem",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sledge_debug_rmb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/sledge_debug_rmb.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/SledgeDebugRMBItem.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/SledgeDebugRMBEntity.java",
+          "src/main/java/net/mcreator/jigsawponosdlc/client/renderer/SledgeDebugRMBRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "SexySledgehammerRightclicked",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sexy_sledgehammer_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/SexySledgehammerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SexySledgehammer",
+      "type": "tool",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sexy_sledgehammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/item/SexySledgehammerItem.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/sexy_sledgehammer.json"
+        ]
+      }
+    },
+    {
+      "name": "SexySledgeCraft",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sexy_sledge_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/sexy_sledge_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "PonosBombItemRightclicked",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponos_bomb_item_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PonosBombItemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PonosBombItem",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ponos_bomb_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/item/PonosBombItemItem.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/ponos_bomb_item.json"
+        ]
+      }
+    },
+    {
+      "name": "ExtinguisherCraft",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extinguisher_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/extinguisher_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "PerdezhInBottleOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perdezh_in_bottle_on_player_stopped_using",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PerdezhInBottleOnPlayerStoppedUsingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Jar",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/jar.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/block/JarBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/jar.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/jar.json"
+        ]
+      }
+    },
+    {
+      "name": "JarFilled",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_filled",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/jar_filled.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/block/JarFilledBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/jar_filled.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/jar_filled.json"
+        ]
+      }
+    },
+    {
+      "name": "BobrovuhaInfusing",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bobrovuha_infusing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/bobrovuha_infusing.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/block/BobrovuhaInfusingBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/bobrovuha_infusing.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/bobrovuha_infusing.json"
+        ]
+      }
+    },
+    {
+      "name": "BobrovuhaDone",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bobrovuha_done",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/block/BobrovuhaDoneBlock.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/bobrovuha_done.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/block/bobrovuha_done.json",
+          "src/main/resources/assets/jigsaw_ponos_dlc/blockstates/bobrovuha_done.json"
+        ]
+      }
+    },
+    {
+      "name": "BobrovuhaEffect",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bobrovuha_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/BobrovuhaEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bobrovuha",
+      "type": "item",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bobrovuha",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/bobrovuha.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/BobrovuhaItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WandOfMassDestruction",
+      "type": "item",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand_of_mass_destruction",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/wand_of_mass_destruction.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/item/WandOfMassDestructionItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WandOfMassDestructionRightclicked",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wand_of_mass_destruction_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/WandOfMassDestructionRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JarFilledOnBlockRightClicked2",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_filled_on_block_right_clicked_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/JarFilledOnBlockRightClicked2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JarOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/JarOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JarCraft",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jar_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/jar_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "AdvbeaverCollarCraft",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advbeaver_collar_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/advbeaver_collar_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "BobrovuhaInfusingUpdateTick",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bobrovuha_infusing_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/BobrovuhaInfusingUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BottledPonosRecipe",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bottled_ponos_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/bottled_ponos_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ShitBooferCraft",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_boofer_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jigsaw_ponos_dlc/recipes/shit_boofer_craft.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "perdezhing",
+      "files": [
+        "perdezh"
+      ],
+      "category": "neutral",
+      "subtitle": "Someone has farted"
+    },
+    {
+      "name": "dristanul",
+      "files": [
+        "drist"
+      ],
+      "category": "master",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "ru_ru": {
+      "block.jigsaw_ponos_dlc.diamond_iron_block": "Блок алмазного железа",
+      "itemGroup.tabjigsaw_plus": "Jigsaw +",
+      "item.jigsaw_ponos_dlc.zombie_beaver_spawn_egg": "Яйцо призыва Боброзомби (WIP)",
+      "block.jigsaw_ponos_dlc.fart_turret": "Пердежная туррель",
+      "entity.jigsaw_ponos_dlc.zombie_beaver": "Боброзомби (WIP)",
+      "item.jigsaw_ponos_dlc.sledge_debug_rmb": "Отладочный кусок кувалды RMB (DEBUG)",
+      "block.jigsaw_ponos_dlc.perdezh_block": "Блок пердежа",
+      "item.jigsaw_ponos_dlc.ponos_bomb": "Поносная бомбочка (DEBUG)",
+      "block.jigsaw_ponos_dlc.shit_woofer": "Дристбуфер",
+      "item.jigsaw_ponos_dlc.flint_wrecker": "Кремневый ломатель",
+      "item.jigsaw_ponos_dlc.pushka_perdushka": "Пушка - Пердушка",
+      "item.jigsaw_ponos_dlc.auto_fork": "Автоматическая вилка (DEBUG)",
+      "block.jigsaw_ponos_dlc.brawl_leaves": "Листья из бравл старса",
+      "item.jigsaw_ponos_dlc.sledge_debug_lmb": "Отладочный кусок кувалды LMB (DEBUG)",
+      "block.jigsaw_ponos_dlc.jar": "Jar",
+      "item.jigsaw_ponos_dlc.wand_of_mass_destruction": "Wand Of Mass Destruction",
+      "block.jigsaw_ponos_dlc.bobrovuha_done": "Jar",
+      "item.jigsaw_ponos_dlc.piggun": "Свинопушка",
+      "subtitles.fart": "-",
+      "item.jigsaw_ponos_dlc.beaver_gun": "Бобропушка",
+      "item.jigsaw_ponos_dlc.auto_fork_item": "Автоматическая ложка",
+      "item.jigsaw_ponos_dlc.ponos": "Понос в бутылочке",
+      "subtitles.perdezhing": "Кто то перданул",
+      "item.jigsaw_ponos_dlc.ponosthrower": "Говномёт",
+      "item.jigsaw_ponos_dlc.fart_projectile": "Кусок пердежа (DEBUG)",
+      "block.jigsaw_ponos_dlc.jar_filled": "Jar",
+      "item.jigsaw_ponos_dlc.maznya_essence": "Эссенция мазни",
+      "block.jigsaw_ponos_dlc.bobrovuha_infusing": "Jar",
+      "item.jigsaw_ponos_dlc.sexy_sledgehammer": "Кувалда",
+      "item.jigsaw_ponos_dlc.extinguisher": "Огнетушитель",
+      "subtitles.dristanul": "\"Звуки поноса\"",
+      "item.jigsaw_ponos_dlc.op_piggun": "Админская свинопушка ",
+      "item.jigsaw_ponos_dlc.perdezh_in_bottle": "Пердеж в бутылочке",
+      "item.jigsaw_ponos_dlc.advanced_beaver_collar": "Улучшеный боброкосяк",
+      "block.jigsaw_ponos_dlc.ponosblock": "Блок поноса",
+      "item.jigsaw_ponos_dlc.ponos_bomb_item": "Поносная бомбочка ",
+      "item.jigsaw_ponos_dlc.bobrovuha": "Bobrovuha",
+      "item.jigsaw_ponos_dlc.pig_ammo": "Свиной раствор"
+    },
+    "en_us": {
+      "itemGroup.tabjigsaw_plus": "Jigsaw +",
+      "block.jigsaw_ponos_dlc.diamond_iron_block": "Diamond Iron Block",
+      "item.jigsaw_ponos_dlc.zombie_beaver_spawn_egg": "Zombie Beaver (WIP) Spawn Egg",
+      "block.jigsaw_ponos_dlc.fart_turret": "Fart Turret",
+      "entity.jigsaw_ponos_dlc.zombie_beaver": "Zombie Beaver (WIP)",
+      "item.jigsaw_ponos_dlc.sledge_debug_rmb": "Sledge Debug (throw)",
+      "block.jigsaw_ponos_dlc.perdezh_block": "Fart block",
+      "item.jigsaw_ponos_dlc.ponos_bomb": "Diarrhea bomb (DEBUG)",
+      "block.jigsaw_ponos_dlc.shit_woofer": "Shit Woofer",
+      "item.jigsaw_ponos_dlc.flint_wrecker": "Flint Wrecker",
+      "item.jigsaw_ponos_dlc.pushka_perdushka": "Fart gun",
+      "item.jigsaw_ponos_dlc.auto_fork": "Automatic spoon (DEBUG)",
+      "block.jigsaw_ponos_dlc.brawl_leaves": "BLLEAVESDEBUGLEGACY",
+      "item.jigsaw_ponos_dlc.sledge_debug_lmb": "Sledge Debug (lightning)",
+      "block.jigsaw_ponos_dlc.jar": "Jar",
+      "item.jigsaw_ponos_dlc.wand_of_mass_destruction": "Wand Of Mass Destruction",
+      "block.jigsaw_ponos_dlc.bobrovuha_done": "Bobrovuha Done(DEBUG)",
+      "item.jigsaw_ponos_dlc.piggun": "Pig gun",
+      "subtitles.fart": "Someone farted!",
+      "item.jigsaw_ponos_dlc.beaver_gun": "Beaver gun (admin)",
+      "item.jigsaw_ponos_dlc.auto_fork_item": "Auto spoon",
+      "item.jigsaw_ponos_dlc.ponos": "Diarrhea in a bottle",
+      "subtitles.perdezhing": "Someone has farted",
+      "item.jigsaw_ponos_dlc.ponosthrower": "Shitthrower",
+      "item.jigsaw_ponos_dlc.fart_projectile": "Fart projectile (DEBUG)",
+      "block.jigsaw_ponos_dlc.jar_filled": "Jar with water",
+      "item.jigsaw_ponos_dlc.maznya_essence": "Maznya Essence",
+      "block.jigsaw_ponos_dlc.bobrovuha_infusing": "Infusing bobrovuha",
+      "item.jigsaw_ponos_dlc.sexy_sledgehammer": "Sledgehammer",
+      "item.jigsaw_ponos_dlc.extinguisher": "Extinguisher",
+      "subtitles.dristanul": "This beat is shit",
+      "item.jigsaw_ponos_dlc.op_piggun": "Pig gun (admin)",
+      "item.jigsaw_ponos_dlc.perdezh_in_bottle": "Fart In a Can",
+      "item.jigsaw_ponos_dlc.advanced_beaver_collar": "Advanced Beaver Collar",
+      "block.jigsaw_ponos_dlc.ponosblock": "Diarrhea block",
+      "item.jigsaw_ponos_dlc.ponos_bomb_item": "Ponos Bomb",
+      "item.jigsaw_ponos_dlc.bobrovuha": "Bobrovuha",
+      "item.jigsaw_ponos_dlc.pig_ammo": "Pig solution"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "jigsaw_ponos_dlc",
+    "modName": "Jigsaw ponos DLC",
+    "version": "6.6.6",
+    "author": "Бобр",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "biezymiannyi",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.jigsawponosdlc",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300108712
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jigsaw_ponos_dlc:ponos"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:ponos"
+    },
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:ponos"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:ponos"
+    }
+  ],
+  "result": {
+    "item": "jigsaw_ponos_dlc:ponosblock",
+    "count": 1
+  }
+}

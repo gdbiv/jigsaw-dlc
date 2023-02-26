@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:ponos"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:ponos"
+    },
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:ponos"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:ponos"
+    },
+    {
+      "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
+    }
+  ],
+  "result": {
+    "item": "jigsaw_ponos_dlc:ponos_bomb_item",
+    "count": 1
+  }
+}

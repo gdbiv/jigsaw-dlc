@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PerdezhInBottle"
+      },
+      {
+        "value": "CUSTOM:Ponos"
+      },
+      {
+        "value": "CUSTOM:PerdezhInBottle"
+      },
+      {
+        "value": "CUSTOM:Ponos"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "CUSTOM:Ponos"
+      },
+      {
+        "value": "CUSTOM:PerdezhInBottle"
+      },
+      {
+        "value": "CUSTOM:Ponos"
+      },
+      {
+        "value": "CUSTOM:PerdezhInBottle"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PonosBombItem"
+    },
+    "name": "ponosbomb_recipe",
+    "namespace": "mod"
+  }
+}

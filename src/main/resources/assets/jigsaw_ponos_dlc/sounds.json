@@ -1,0 +1,21 @@
+{
+  "perdezhing": {
+    "category": "neutral",
+    "subtitle": "subtitles.perdezhing",
+    "sounds": [
+      {
+        "name": "jigsaw_ponos_dlc:perdezh",
+        "stream": false
+      }
+    ]
+  },
+  "dristanul": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "jigsaw_ponos_dlc:drist",
+        "stream": false
+      }
+    ]
+  }
+}
