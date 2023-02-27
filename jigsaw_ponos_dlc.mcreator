@@ -140,60 +140,6 @@
       }
     },
     {
-      "name": "PerdezhBlockBlockAdded",
-      "type": "procedure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "perdezh_block_block_added",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PerdezhBlockBlockAddedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "PerdezhBlockEntityWalksOnTheBlock",
-      "type": "procedure",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "perdezh_block_entity_walks_on_the_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PerdezhBlockEntityWalksOnTheBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "PerdezhBlock",
       "type": "block",
       "sortid": 10,
@@ -1660,6 +1606,182 @@
           "src/main/resources/data/jigsaw_ponos_dlc/recipes/shit_boofer_craft.json"
         ]
       }
+    },
+    {
+      "name": "FartCloud",
+      "type": "particle",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fart_cloud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jigsaw_ponos_dlc/particles/fart_cloud.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/client/particle/FartCloudParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "PerdezhingCloudOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perdezhing_cloud_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/PerdezhingCloudOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PerdezhingCloud",
+      "type": "livingentity",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "perdezhing_cloud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/client/renderer/PerdezhingCloudRenderer.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/perdezhing_cloud_spawn_egg.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/PerdezhingCloudEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "UniversePigEntityDies",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universe_pig_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/UniversePigEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UniversePigOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universe_pig_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/UniversePigOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UniversePig",
+      "type": "livingentity",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universe_pig",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/client/renderer/UniversePigRenderer.java",
+          "src/main/resources/assets/jigsaw_ponos_dlc/models/item/universe_pig_spawn_egg.json",
+          "src/main/java/net/mcreator/jigsawponosdlc/entity/UniversePigEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "UniversePigThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "universe_pig_this_entity_kills_another_one",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jigsawponosdlc/procedures/UniversePigThisEntityKillsAnotherOneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1697,10 +1819,12 @@
       "item.jigsaw_ponos_dlc.auto_fork": "Автоматическая вилка (DEBUG)",
       "block.jigsaw_ponos_dlc.brawl_leaves": "Листья из бравл старса",
       "item.jigsaw_ponos_dlc.sledge_debug_lmb": "Отладочный кусок кувалды LMB (DEBUG)",
-      "block.jigsaw_ponos_dlc.jar": "Jar",
-      "item.jigsaw_ponos_dlc.wand_of_mass_destruction": "Wand Of Mass Destruction",
-      "block.jigsaw_ponos_dlc.bobrovuha_done": "Jar",
+      "block.jigsaw_ponos_dlc.jar": "Банка",
+      "item.jigsaw_ponos_dlc.wand_of_mass_destruction": "Посох великого пиздеца",
+      "block.jigsaw_ponos_dlc.bobrovuha_done": "Готовая бобровуха (DEBUG)",
       "item.jigsaw_ponos_dlc.piggun": "Свинопушка",
+      "entity.jigsaw_ponos_dlc.universe_pig": "Вселенская Свинья",
+      "item.jigsaw_ponos_dlc.universe_pig_spawn_egg": "Яйцо призыва Вселенской Свиньи",
       "subtitles.fart": "-",
       "item.jigsaw_ponos_dlc.beaver_gun": "Бобропушка",
       "item.jigsaw_ponos_dlc.auto_fork_item": "Автоматическая ложка",
@@ -1708,18 +1832,20 @@
       "subtitles.perdezhing": "Кто то перданул",
       "item.jigsaw_ponos_dlc.ponosthrower": "Говномёт",
       "item.jigsaw_ponos_dlc.fart_projectile": "Кусок пердежа (DEBUG)",
-      "block.jigsaw_ponos_dlc.jar_filled": "Jar",
+      "block.jigsaw_ponos_dlc.jar_filled": "Банка с водой",
+      "item.jigsaw_ponos_dlc.perdezhing_cloud_spawn_egg": "Яичко пережа (DEBUG)",
       "item.jigsaw_ponos_dlc.maznya_essence": "Эссенция мазни",
-      "block.jigsaw_ponos_dlc.bobrovuha_infusing": "Jar",
+      "block.jigsaw_ponos_dlc.bobrovuha_infusing": "Настаивающаяся бобровуха",
       "item.jigsaw_ponos_dlc.sexy_sledgehammer": "Кувалда",
       "item.jigsaw_ponos_dlc.extinguisher": "Огнетушитель",
       "subtitles.dristanul": "\"Звуки поноса\"",
+      "entity.jigsaw_ponos_dlc.perdezhing_cloud": "Пердежное облачко (DEBUG)",
       "item.jigsaw_ponos_dlc.op_piggun": "Админская свинопушка ",
       "item.jigsaw_ponos_dlc.perdezh_in_bottle": "Пердеж в бутылочке",
       "item.jigsaw_ponos_dlc.advanced_beaver_collar": "Улучшеный боброкосяк",
       "block.jigsaw_ponos_dlc.ponosblock": "Блок поноса",
       "item.jigsaw_ponos_dlc.ponos_bomb_item": "Поносная бомбочка ",
-      "item.jigsaw_ponos_dlc.bobrovuha": "Bobrovuha",
+      "item.jigsaw_ponos_dlc.bobrovuha": "Бобровуха",
       "item.jigsaw_ponos_dlc.pig_ammo": "Свиной раствор"
     },
     "en_us": {
@@ -1729,7 +1855,7 @@
       "block.jigsaw_ponos_dlc.fart_turret": "Fart Turret",
       "entity.jigsaw_ponos_dlc.zombie_beaver": "Zombie Beaver (WIP)",
       "item.jigsaw_ponos_dlc.sledge_debug_rmb": "Sledge Debug (throw)",
-      "block.jigsaw_ponos_dlc.perdezh_block": "Fart block",
+      "block.jigsaw_ponos_dlc.perdezh_block": "FARTBLKDEBUG",
       "item.jigsaw_ponos_dlc.ponos_bomb": "Diarrhea bomb (DEBUG)",
       "block.jigsaw_ponos_dlc.shit_woofer": "Shit Woofer",
       "item.jigsaw_ponos_dlc.flint_wrecker": "Flint Wrecker",
@@ -1741,6 +1867,8 @@
       "item.jigsaw_ponos_dlc.wand_of_mass_destruction": "Wand Of Mass Destruction",
       "block.jigsaw_ponos_dlc.bobrovuha_done": "Bobrovuha Done(DEBUG)",
       "item.jigsaw_ponos_dlc.piggun": "Pig gun",
+      "entity.jigsaw_ponos_dlc.universe_pig": "Universe Pig",
+      "item.jigsaw_ponos_dlc.universe_pig_spawn_egg": "Universe Pig Spawn Egg",
       "subtitles.fart": "Someone farted!",
       "item.jigsaw_ponos_dlc.beaver_gun": "Beaver gun (admin)",
       "item.jigsaw_ponos_dlc.auto_fork_item": "Auto spoon",
@@ -1749,11 +1877,13 @@
       "item.jigsaw_ponos_dlc.ponosthrower": "Shitthrower",
       "item.jigsaw_ponos_dlc.fart_projectile": "Fart projectile (DEBUG)",
       "block.jigsaw_ponos_dlc.jar_filled": "Jar with water",
+      "item.jigsaw_ponos_dlc.perdezhing_cloud_spawn_egg": "Perdezhing Cloud Spawn Egg",
       "item.jigsaw_ponos_dlc.maznya_essence": "Maznya Essence",
       "block.jigsaw_ponos_dlc.bobrovuha_infusing": "Infusing bobrovuha",
       "item.jigsaw_ponos_dlc.sexy_sledgehammer": "Sledgehammer",
       "item.jigsaw_ponos_dlc.extinguisher": "Extinguisher",
       "subtitles.dristanul": "This beat is shit",
+      "entity.jigsaw_ponos_dlc.perdezhing_cloud": "Perdezhing Cloud",
       "item.jigsaw_ponos_dlc.op_piggun": "Pig gun (admin)",
       "item.jigsaw_ponos_dlc.perdezh_in_bottle": "Fart In a Can",
       "item.jigsaw_ponos_dlc.advanced_beaver_collar": "Advanced Beaver Collar",
@@ -1771,7 +1901,7 @@
     "modid": "jigsaw_ponos_dlc",
     "modName": "Jigsaw ponos DLC",
     "version": "6.6.6",
-    "author": "Бобр",
+    "author": "Beaver",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,

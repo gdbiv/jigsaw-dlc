@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "perdun_projectile",
+    "texture": "dbg_txt",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,9 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Fart block",
+    "name": "FARTBLKDEBUG",
     "specialInfo": [],
-    "hardness": -1.0,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -44,7 +44,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "Blocks.MOSS_BLOCK"
+      "value": "Blocks.WAXED_WEATHERED_CUT_COPPER_STAIRS"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -117,15 +117,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "PerdezhBlockBlockAdded"
-    },
-    "onEntityCollides": {
-      "name": "PerdezhBlockEntityWalksOnTheBlock"
-    },
-    "onEntityWalksOn": {
-      "name": "PerdezhBlockEntityWalksOnTheBlock"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

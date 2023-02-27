@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Bobrovuha"
+      "value": "CUSTOM:Jar"
     },
     "name": "jar_craft",
     "namespace": "mod"

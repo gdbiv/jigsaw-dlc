@@ -74,6 +74,9 @@ public class JigsawPonosDlcModItems {
 	public static final RegistryObject<Item> BOBROVUHA_DONE = block(JigsawPonosDlcModBlocks.BOBROVUHA_DONE, null);
 	public static final RegistryObject<Item> BOBROVUHA = REGISTRY.register("bobrovuha", () -> new BobrovuhaItem());
 	public static final RegistryObject<Item> WAND_OF_MASS_DESTRUCTION = REGISTRY.register("wand_of_mass_destruction", () -> new WandOfMassDestructionItem());
+	public static final RegistryObject<Item> PERDEZHING_CLOUD_SPAWN_EGG = REGISTRY.register("perdezhing_cloud_spawn_egg", () -> new ForgeSpawnEggItem(JigsawPonosDlcModEntities.PERDEZHING_CLOUD, -1, -1, new Item.Properties().tab(null)));
+	public static final RegistryObject<Item> UNIVERSE_PIG_SPAWN_EGG = REGISTRY.register("universe_pig_spawn_egg",
+			() -> new ForgeSpawnEggItem(JigsawPonosDlcModEntities.UNIVERSE_PIG, -16751002, -52225, new Item.Properties().tab(JigsawPonosDlcModTabs.TAB_JIGSAW_PLUS)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

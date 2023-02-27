@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.jigsawponosdlc.init.JigsawPonosDlcModTabs;
+import net.mcreator.jigsawponosdlc.init.JigsawPonosDlcModParticleTypes;
 import net.mcreator.jigsawponosdlc.init.JigsawPonosDlcModItems;
 import net.mcreator.jigsawponosdlc.init.JigsawPonosDlcModEntities;
 import net.mcreator.jigsawponosdlc.init.JigsawPonosDlcModBlocks;
@@ -52,6 +53,7 @@ public class JigsawPonosDlcMod {
 		JigsawPonosDlcModEntities.REGISTRY.register(bus);
 		JigsawPonosDlcModBlockEntities.REGISTRY.register(bus);
 
+		JigsawPonosDlcModParticleTypes.REGISTRY.register(bus);
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {

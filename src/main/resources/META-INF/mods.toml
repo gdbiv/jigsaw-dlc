@@ -9,7 +9,7 @@ displayName="Jigsaw ponos DLC"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
-authors="Бобр"
+authors="Beaver"
 
 [[dependencies.jigsaw_ponos_dlc]]
     modId="minecraft"

@@ -12,7 +12,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.jigsawponosdlc.client.renderer.ZombieBeaverRenderer;
+import net.mcreator.jigsawponosdlc.client.renderer.UniversePigRenderer;
 import net.mcreator.jigsawponosdlc.client.renderer.SledgeDebugRMBRenderer;
+import net.mcreator.jigsawponosdlc.client.renderer.PerdezhingCloudRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class JigsawPonosDlcModEntityRenderers {
@@ -29,5 +31,7 @@ public class JigsawPonosDlcModEntityRenderers {
 		event.registerEntityRenderer(JigsawPonosDlcModEntities.EXTINGUISHER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawPonosDlcModEntities.SLEDGE_DEBUG_LMB.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JigsawPonosDlcModEntities.SLEDGE_DEBUG_RMB.get(), SledgeDebugRMBRenderer::new);
+		event.registerEntityRenderer(JigsawPonosDlcModEntities.PERDEZHING_CLOUD.get(), PerdezhingCloudRenderer::new);
+		event.registerEntityRenderer(JigsawPonosDlcModEntities.UNIVERSE_PIG.get(), UniversePigRenderer::new);
 	}
 }

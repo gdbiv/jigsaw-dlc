@@ -17,12 +17,14 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.jigsawponosdlc.entity.ZombieBeaverEntity;
+import net.mcreator.jigsawponosdlc.entity.UniversePigEntity;
 import net.mcreator.jigsawponosdlc.entity.SledgeDebugRMBEntity;
 import net.mcreator.jigsawponosdlc.entity.SledgeDebugLMBEntity;
 import net.mcreator.jigsawponosdlc.entity.PushkaPerdushkaEntity;
 import net.mcreator.jigsawponosdlc.entity.PonosthrowerEntity;
 import net.mcreator.jigsawponosdlc.entity.PonosBombEntity;
 import net.mcreator.jigsawponosdlc.entity.PiggunEntity;
+import net.mcreator.jigsawponosdlc.entity.PerdezhingCloudEntity;
 import net.mcreator.jigsawponosdlc.entity.OpPiggunEntity;
 import net.mcreator.jigsawponosdlc.entity.ExtinguisherEntity;
 import net.mcreator.jigsawponosdlc.entity.BeaverGunEntity;
@@ -56,6 +58,10 @@ public class JigsawPonosDlcModEntities {
 			EntityType.Builder.<SledgeDebugLMBEntity>of(SledgeDebugLMBEntity::new, MobCategory.MISC).setCustomClientFactory(SledgeDebugLMBEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<SledgeDebugRMBEntity>> SLEDGE_DEBUG_RMB = register("projectile_sledge_debug_rmb",
 			EntityType.Builder.<SledgeDebugRMBEntity>of(SledgeDebugRMBEntity::new, MobCategory.MISC).setCustomClientFactory(SledgeDebugRMBEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PerdezhingCloudEntity>> PERDEZHING_CLOUD = register("perdezhing_cloud", EntityType.Builder.<PerdezhingCloudEntity>of(PerdezhingCloudEntity::new, MobCategory.AMBIENT)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(0).setUpdateInterval(3).setCustomClientFactory(PerdezhingCloudEntity::new).fireImmune().sized(0.9f, 1.4f));
+	public static final RegistryObject<EntityType<UniversePigEntity>> UNIVERSE_PIG = register("universe_pig", EntityType.Builder.<UniversePigEntity>of(UniversePigEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(10000).setUpdateInterval(3).setCustomClientFactory(UniversePigEntity::new).fireImmune().sized(3.5f, 5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -65,11 +71,15 @@ public class JigsawPonosDlcModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			ZombieBeaverEntity.init();
+			PerdezhingCloudEntity.init();
+			UniversePigEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(ZOMBIE_BEAVER.get(), ZombieBeaverEntity.createAttributes().build());
+		event.put(PERDEZHING_CLOUD.get(), PerdezhingCloudEntity.createAttributes().build());
+		event.put(UNIVERSE_PIG.get(), UniversePigEntity.createAttributes().build());
 	}
 }

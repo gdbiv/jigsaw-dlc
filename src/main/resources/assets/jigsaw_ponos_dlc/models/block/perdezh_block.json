@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "jigsaw_ponos_dlc:blocks/perdun_projectile",
-    "up": "jigsaw_ponos_dlc:blocks/perdun_projectile",
-    "north": "jigsaw_ponos_dlc:blocks/perdun_projectile",
-    "east": "jigsaw_ponos_dlc:blocks/perdun_projectile",
-    "south": "jigsaw_ponos_dlc:blocks/perdun_projectile",
-    "west": "jigsaw_ponos_dlc:blocks/perdun_projectile",
-    "particle": "jigsaw_ponos_dlc:blocks/perdun_projectile"
+    "down": "jigsaw_ponos_dlc:blocks/dbg_txt",
+    "up": "jigsaw_ponos_dlc:blocks/dbg_txt",
+    "north": "jigsaw_ponos_dlc:blocks/dbg_txt",
+    "east": "jigsaw_ponos_dlc:blocks/dbg_txt",
+    "south": "jigsaw_ponos_dlc:blocks/dbg_txt",
+    "west": "jigsaw_ponos_dlc:blocks/dbg_txt",
+    "particle": "jigsaw_ponos_dlc:blocks/dbg_txt"
   }
 }

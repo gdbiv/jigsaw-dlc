@@ -10,7 +10,7 @@
       "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
     },
     "1": {
-      "item": "minecraft:emerald_block"
+      "item": "jigsaw_ponos_dlc:pushka_perdushka"
     },
     "2": {
       "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
@@ -25,13 +25,13 @@
       "item": "jigsaw_ponos_dlc:perdezh_in_bottle"
     },
     "6": {
-      "item": "jigsaw_ponos_dlc:diamond_iron_block"
+      "item": "minecraft:diamond_block"
     },
     "7": {
       "item": "jigsaw_ponos_dlc:ponosblock"
     },
     "8": {
-      "item": "jigsaw_ponos_dlc:diamond_iron_block"
+      "item": "minecraft:diamond_block"
     }
   },
   "result": {

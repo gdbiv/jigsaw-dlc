@@ -13,7 +13,7 @@
         "value": "CUSTOM:PerdezhInBottle"
       },
       {
-        "value": "Blocks.EMERALD_BLOCK"
+        "value": "CUSTOM:PushkaPerdushka"
       },
       {
         "value": "CUSTOM:PerdezhInBottle"
@@ -28,13 +28,13 @@
         "value": "CUSTOM:PerdezhInBottle"
       },
       {
-        "value": "CUSTOM:DiamondIronBlock"
+        "value": "Blocks.DIAMOND_BLOCK"
       },
       {
         "value": "CUSTOM:Ponosblock"
       },
       {
-        "value": "CUSTOM:DiamondIronBlock"
+        "value": "Blocks.DIAMOND_BLOCK"
       }
     ],
     "recipeReturnStack": {
