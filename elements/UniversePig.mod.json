@@ -54,8 +54,8 @@
     "knockbackResistance": 1000.0,
     "movementSpeed": 0.5,
     "armorBaseValue": 100.0,
-    "trackingRange": 10000,
-    "followRange": 1024,
+    "trackingRange": 100,
+    "followRange": 100,
     "health": 1024,
     "xpAmount": 32767,
     "waterMob": false,
@@ -94,9 +94,6 @@
     },
     "stepSound": {
       "value": "entity.ravager.step"
-    },
-    "whenMobDies": {
-      "name": "UniversePigEntityDies"
     },
     "whenThisMobKillsAnother": {
       "name": "UniversePigThisEntityKillsAnotherOne"

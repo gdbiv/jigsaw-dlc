@@ -10,22 +10,22 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "TAG:forge:beaweeddust"
-      },
-      {
-        "value": "TAG:forge:beaweeddust"
-      },
-      {
-        "value": "Items.GLASS_BOTTLE"
-      },
-      {
-        "value": "TAG:forge:beaweeddust"
-      },
-      {
-        "value": "TAG:forge:beaweeddust"
+        "value": ""
       },
       {
         "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ponosthrower"
+      },
+      {
+        "value": "Items.SHEARS"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Ponos"
+      "value": "CUSTOM:PonosthrowerNonAnal"
     },
-    "name": "bottled_ponos_recipe",
+    "name": "shit_thrower_2_craft",
     "namespace": "mod"
   }
 }

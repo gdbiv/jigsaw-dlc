@@ -34,7 +34,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.jigsawponosdlc.procedures.UniversePigThisEntityKillsAnotherOneProcedure;
 import net.mcreator.jigsawponosdlc.procedures.UniversePigOnEntityTickUpdateProcedure;
-import net.mcreator.jigsawponosdlc.procedures.UniversePigEntityDiesProcedure;
 import net.mcreator.jigsawponosdlc.init.JigsawPonosDlcModItems;
 import net.mcreator.jigsawponosdlc.init.JigsawPonosDlcModEntities;
 
@@ -135,12 +134,6 @@ public class UniversePigEntity extends Monster {
 	}
 
 	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		UniversePigEntityDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
 	public void awardKillScore(Entity entity, int score, DamageSource damageSource) {
 		super.awardKillScore(entity, score, damageSource);
 		UniversePigThisEntityKillsAnotherOneProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
@@ -184,7 +177,7 @@ public class UniversePigEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 1024);
 		builder = builder.add(Attributes.ARMOR, 100);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10000);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 1024);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 100);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1000);
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1000);
 		return builder;

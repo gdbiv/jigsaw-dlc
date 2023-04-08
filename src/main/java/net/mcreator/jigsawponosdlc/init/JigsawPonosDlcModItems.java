@@ -19,18 +19,22 @@ import net.mcreator.jigsawponosdlc.item.SledgeDebugRMBItem;
 import net.mcreator.jigsawponosdlc.item.SledgeDebugLMBItem;
 import net.mcreator.jigsawponosdlc.item.SexySledgehammerItem;
 import net.mcreator.jigsawponosdlc.item.PushkaPerdushkaItem;
+import net.mcreator.jigsawponosdlc.item.PonosthrowerNonAnalItem;
 import net.mcreator.jigsawponosdlc.item.PonosthrowerItem;
 import net.mcreator.jigsawponosdlc.item.PonosItem;
 import net.mcreator.jigsawponosdlc.item.PonosBombItemItem;
 import net.mcreator.jigsawponosdlc.item.PonosBombItem;
+import net.mcreator.jigsawponosdlc.item.PirateCutlassItem;
 import net.mcreator.jigsawponosdlc.item.PiggunItem;
 import net.mcreator.jigsawponosdlc.item.PigAmmoItem;
 import net.mcreator.jigsawponosdlc.item.PerdezhInBottleItem;
 import net.mcreator.jigsawponosdlc.item.PerdezhDebugItem;
 import net.mcreator.jigsawponosdlc.item.OpPiggunItem;
 import net.mcreator.jigsawponosdlc.item.MaznyaEssenceItem;
+import net.mcreator.jigsawponosdlc.item.GovnoDebugItem;
 import net.mcreator.jigsawponosdlc.item.FlintWreckerItem;
 import net.mcreator.jigsawponosdlc.item.ExtinguisherItem;
+import net.mcreator.jigsawponosdlc.item.DickkatanaItem;
 import net.mcreator.jigsawponosdlc.item.BobrovuhaItem;
 import net.mcreator.jigsawponosdlc.item.BeaverGunItem;
 import net.mcreator.jigsawponosdlc.item.AutoForkItemItem;
@@ -77,6 +81,12 @@ public class JigsawPonosDlcModItems {
 	public static final RegistryObject<Item> PERDEZHING_CLOUD_SPAWN_EGG = REGISTRY.register("perdezhing_cloud_spawn_egg", () -> new ForgeSpawnEggItem(JigsawPonosDlcModEntities.PERDEZHING_CLOUD, -1, -1, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> UNIVERSE_PIG_SPAWN_EGG = REGISTRY.register("universe_pig_spawn_egg",
 			() -> new ForgeSpawnEggItem(JigsawPonosDlcModEntities.UNIVERSE_PIG, -16751002, -52225, new Item.Properties().tab(JigsawPonosDlcModTabs.TAB_JIGSAW_PLUS)));
+	public static final RegistryObject<Item> DICK_KATANA = REGISTRY.register("dick_katana", () -> new DickkatanaItem());
+	public static final RegistryObject<Item> PIRATE_CUTLASS = REGISTRY.register("pirate_cutlass", () -> new PirateCutlassItem());
+	public static final RegistryObject<Item> BEAVER_SPIDER_SPAWN_EGG = REGISTRY.register("beaver_spider_spawn_egg",
+			() -> new ForgeSpawnEggItem(JigsawPonosDlcModEntities.BEAVER_SPIDER, -16777216, -6724096, new Item.Properties().tab(JigsawPonosDlcModTabs.TAB_JIGSAW_PLUS)));
+	public static final RegistryObject<Item> PONOSTHROWER_NON_ANAL = REGISTRY.register("ponosthrower_non_anal", () -> new PonosthrowerNonAnalItem());
+	public static final RegistryObject<Item> GOVNO_DEBUG = REGISTRY.register("govno_debug", () -> new GovnoDebugItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

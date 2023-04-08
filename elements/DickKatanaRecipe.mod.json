@@ -7,40 +7,40 @@
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
-    "recipeShapeless": true,
+    "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:forge:beaweeddust"
+        "value": "Items.PORKCHOP"
       },
       {
-        "value": "TAG:forge:beaweeddust"
+        "value": "Blocks.DIAMOND_BLOCK"
       },
       {
-        "value": "Items.GLASS_BOTTLE"
+        "value": "Items.PORKCHOP"
       },
       {
-        "value": "TAG:forge:beaweeddust"
+        "value": "Items.LEATHER"
       },
       {
-        "value": "TAG:forge:beaweeddust"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": ""
+        "value": "Items.LEATHER"
       },
       {
-        "value": ""
+        "value": "Items.PORKCHOP"
       },
       {
-        "value": ""
+        "value": "Blocks.LIGHTNING_ROD"
       },
       {
-        "value": ""
+        "value": "Items.PORKCHOP"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Ponos"
+      "value": "CUSTOM:Dickkatana"
     },
-    "name": "bottled_ponos_recipe",
+    "name": "dick_katana_recipe",
     "namespace": "mod"
   }
 }
